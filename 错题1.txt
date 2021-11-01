@@ -1,17 +1,17 @@
 1.函数内部argument变量以下特性中，哪一个是错的(B )
-A.argument[index]分别对应函数调用时的实参
-B.箭头函数没有arguments
-C.argumens是一个Arry数组
-D.arguments.length为实参的个数
+  A.argument[index]分别对应函数调用时的实参
+  B.箭头函数没有arguments
+  C.argumens是一个Arry数组
+  D.arguments.length为实参的个数
 解析：
-  B：
+    B：
 1、箭头函数没有自己的this，arguments，super或new.target。
 2、它的this、arguments都是在定义函数时绑定外层的this和arguments，而不是在执行过程中绑定的，所以不会因为调用者不同而发生变化。
 3、箭头函数若想得到自身的入参列表arguments，必须使用剩余参数表示法。
 4、箭头函数表达式更适用于那些本来需要匿名函数的地方，并且它不能用作构造函数。
-  A:
+    A:
 arguments[index]分别对应函数调用时的实参，并且通过arguments修改实参时会同时修改实参
-  C:
+    C:
 在JavaScript中，arguments是对象的一个特殊属性。arguments对象就像数组，但是它却不是数组
-  D:
+    D:
 arguments.length表示的是实际上向函数传入了多少个参数,这个数字可以比形参数量大,也可以比形参数量小(形参数量的值可以通过Function.length获取到)
