@@ -1,0 +1,9 @@
+2.关于WebSocket以下说法正确的是（D）
+A：WebSocket的底层除了支持TCP协议，还支持UDP传输
+B:WebSocket是基于http协议之上的通信协议，他在协议层通过扩展http报文的形式实现；
+C：在发起WebSocket连接时，会首先发送一个http请求进行upgrade；
+D：WebSocket支持监测网络连接，当网络断开时WebSocket也会立即断开；
+  解析：
+A：WebSocket协议底层是通过TCP协议进行通信的不可以使用UDP
+B：Websocket是基于HTTP协议的，或者说借用了HTTP的协议来完成一部分握手WebSocket是HTML5出的东西（协议），也就是说HTTP协议没有变化，或者说没关系，但HTTP是不支持持久连接的
+D：当websocket断开连接时马上重连,依然断开则1分钟后再重连,直到连接成功为止
