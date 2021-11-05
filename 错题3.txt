@@ -1,0 +1,5 @@
+相比CommonJS,ES Module的优势以下说法错误的是（）
+A:ES Module能通过静态分析的方式找出模块之间的所有依赖关系，但CommonJS不行
+B:ES Module是由TC39制定的规范，并且是在语言层面上原生支持的
+C:ES Module的导入和导出能力更加丰富，并且也支持异步导入
+D:CommonJS完全无法做到Tree-Shaking（摇树优化），但ES Module可以做到

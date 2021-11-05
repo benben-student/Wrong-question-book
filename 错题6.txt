@@ -1,0 +1,10 @@
+window.onload和DOMContentLoaded的区别（C）
+A:window.onload的图片，视频还没加载完，DOMContentLoaded是全部资源加载完才会执行，包括图片视频等
+B:window.onload是全部资源加载完才会执行，包括图片视频等，DOMContentLoaded时图片，视频还没加载完
+C:window.onload和DOMContentLoaded都是全部资源加载完才会执行，包括图片视频等
+D:window.onload和DOMContentLoaded图片，视频都还没加载完
+   解析：
+        window.onload
+Window.onload:不仅仅要在结构和样式加载完，还要执行完所有的样式，图片这些资源文件，完全加载完才会触发Window.onload事件。
+       DOMContentLoaded
+当初始的 HTML 文档被完全加载和解析完成之后，DOMContentLoaded 事件被触发，而无需等待样式表、图像和子框架的完全加载。
