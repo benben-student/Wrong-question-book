@@ -1,0 +1,23 @@
+Vue中用于监听DOM事件的的指令是（B）
+A:v-html
+B:v-on
+C:v-bind
+D:v-model
+   解析：
+  事件
+
+监听事件：
+ 可以使用v-on指令监听DOM事件，并在触发时运行一些javaScript代码。
+
+  语法格式:
+v-on:click="表达式"
+
+  语法糖格式：
+@click="表达式"
+
+其中，表达式可以直接使用javafScript语句，也可以是一个在Vue实例中methods选项内的方法名： funcName(param)
+
+  注释说明
+在methods中我们定义了我们需要的方法供@click调用，需要注意的是，@click调用的方法名后可以不跟括号"()"。
+此时，如果该方法有参数，默认会将原生事件对象event传入。在大部分业务场景中，如果方法不需要传入参数，为了
+简便可以不写括号。
